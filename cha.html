@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>茶</title>
+	<link rel="stylesheet" href="cha1.css">
+	<link rel="stylesheet" href="css/lrtk.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/less1.7.min.js"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<script>
+		(function(win) {
+    var doc = win.document;
+    var docEl = doc.documentElement;
+	var metaEl = document.querySelector('meta[name="viewport"]');
+    var tid;
+	dpr = window.devicePixelRatio || 1;//计算赔率
+	scale = 1 / dpr;//计算缩放的比
+	metaEl.setAttribute('content', 'width=' + dpr * docEl.clientWidth + ',initial-scale=' + scale + ',maximum-scale=' + scale + ', minimum-scale=' + scale + ',user-scalable=no');
+
+
+	// 设置data-dpr属性，留作的css hack之用
+	docEl.setAttribute('data-dpr', dpr);
+
+    function refreshRem() {
+        var width = docEl.clientWidth;//逻辑像素
+          if (width > 750) { // 最大宽度
+            width = 1024;
+        }
+        
+        var rem = width / 7.5; // 将屏幕宽度分成10份， 1份为1rem
+        docEl.style.fontSize = rem + 'px';
+    }
+//侦听事件并处理相应的函数。
+    win.addEventListener('resize', function() {
+        clearTimeout(tid);
+        tid = setTimeout(refreshRem, 300);
+    }, false);
+    win.addEventListener('pageshow', function(e) {
+        if (e.persisted) {
+            clearTimeout(tid);
+            tid = setTimeout(refreshRem, 300);
+        }
+    }, false);
+
+    refreshRem();
+
+})(window);
+
+
+		$(function(){
+			$(".bai img").click(function(){
+			if ($(".sou").is(":visible")){
+				$(".sou").hide();
+			}else{
+				$(".sou").show();
+			}
+			})
+		})
+		$(document).ready(function(){
+			$(".san img").click(function(){	
+				if ($(".yinshen").is(":visible"))
+				{
+					$(".yinshen").slideUp("slow");
+				}else{		
+					$(".yinshen").slideDown("slow");}			
+			});
+		})
+	</script>
+</head>
+<body>
+<div id="big">
+<!-------导航及轮播图------------------------------>
+	<header id="first">
+		<nav id="daohangtiao">
+			<figure class="bai">
+				<input type="text" class="sou">
+				<img src="images/tu_03.gif" alt="">
+			</figure>
+			<h1 class="xianming">仙茗阁茶韵文化</h1>
+			<figure class="san">
+				<img src="images/tu_06.gif" alt="">	
+			<div class="yinshen">
+				<ul>
+					<li><a href="">红茶</a></li>
+					<li><a href="">普洱茶</a></li>
+					<li><a href="">绿茶</a></li>
+					<li><a href="">碧螺春</a></li>
+					<li><a href="">龙井</a></li>
+					<li><a href="">正山小种</a></li>
+					<li><a href="">等等</a></li>
+				</ul>
+			</div>
+			</figure>
+		
+			<figure class="xian1">
+				<img src="images/tu_09.gif" alt="">
+			</figure>
+		</nav>
+		<figure class="lunbotu">
+			<div class="slide_container">
+		      <ul class="rslides" id="slider">
+		        <li>
+		          <img src="images/lunbo1.jpg" alt="">
+		        </li>
+		        <li>
+		          <img src="images/lunbo2.gif" alt="">
+		        </li>
+		        <li>
+		          <img src="images/lunbo3.jpg" alt="">
+		        </li>
+		      </ul>
+    		</div>
+		</figure>
+		<figure class="xian2">
+			<img src="images/tu_11.gif" alt="">
+		</figure>
+	</header>
+<!-------------------------------------------------->
+
+<!-----------产品中心-------------------------------->
+	<article id="second">
+		<hgroup class="biaoti1">
+			<h2 class="chanpin">产品中心</h2>
+			<p class="gengduo">>>更多</p>
+		</hgroup>
+		<section class="tu">
+			<ul>
+				<p><img src="images/tu_25.gif" alt=""></p>
+				<p><img src="images/tu_16.gif" alt=""></p>
+				<p><img src="images/tu_19.gif" alt=""></p>
+				<p><img src="images/tu_14.gif" alt=""></p>
+				<p><img src="images/tu_28.gif" alt=""></p>
+				<p><img src="images/tu_30.gif" alt=""></p>
+			</ul>
+		</section>
+		<section class="xian3">
+			<img src="images/tu_11.gif" alt="">
+		</section>
+	</article>
+<!------------------------------------------------->
+
+<!-----------------关于我们及茶道知识-------------->
+	<article id="third">
+		<section class="guanyu">
+			<h3 class="guanyuwomen">关于我们</h3>
+			<section class="neirong1">
+				&nbsp;&nbsp;&nbsp;&nbsp;中国茶文化是中国制茶，饮茶的文化。作为开门七件事(柴米油盐酱醋茶)之一 ，饮茶在古代中国是非常普遍的现象，中国的茶文化与欧美或日本的茶文化分别
+			</section>
+			<section class="neirong11">
+				很大。中国茶文化源远流长，博大精深，不但包含物质文化层面，还包含
+			</section>
+			<section class="neirong12">
+				深厚的精神文明层次
+			</section>
+			<figure class="yun1"><img src="images/tu_35.gif" alt=""></figure>
+		</section>
+		<section class="chadao">
+			<h3 class="chadaozhishi">茶道知识</h3>
+			<section class="neirong2">
+				<ul>
+					<li>1.铁观音的奥妙</li>
+					<li>2.茶道的发扬壮大过程 </li>
+					<li>3.人类的茶韵文化</li>
+					<li>4.带你5分钟了解茶</li>
+					<li>5.2019茶艺基本知识</li>
+					<li>6.泡茶的奥秘</li>
+				</ul>
+			</section>
+			<figure class="yun2"><img src="images/tu_38.gif" alt=""></figure>
+		</section>
+		<section class="xian4">
+			<img src="images/tu_09.gif" alt="">
+		</section>
+	</article>
+<!-------------------------------------------------->
+
+<!-------------------- 页脚 ------------------------>
+	<footer id="fourth">
+		<section class="one">
+			<ul>
+				<li>简介</li>
+				<li>友情链接</li>
+				<li>行业动态</li>
+				<li>茶道知识</li>
+				<li>联系我们</li>
+			</ul>
+		</section>
+		<section class="two">
+			<p>地址：宝鸡文理学院</p>
+			<p>联系电话：18729479646</p>
+			<p>联系人：贾志浩</p>
+		</section>
+		<section class="three">
+			<p>版权所有：**茶叶公司</p>
+			<p>icp备案号：***************</p>
+		</section>
+	</footer>
+<!---------------------------------------------------->
+<script src="js/responsiveslides.min.js"></script>
+<script src="js/slide.js"></script>
+</div>
+
+</body>
+</html>

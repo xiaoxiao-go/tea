@@ -1,0 +1,286 @@
+*{
+	margin: 0;
+	padding: 0;
+	margin: 0 auto;
+}
+#big{
+	width: 750px;
+	height: 1334px;
+}
+#first{
+	width: 750px;
+	height:450px;
+	background: #490713;
+}
+.bai img{
+	width: 72px;
+	height: 65.5px;
+	float: left;
+
+}
+.bai{
+		background: purple;
+	margin: 0;
+}
+.sou{
+  height: 27px;
+	width: 100px;
+	float: left;
+	display:none;
+	margin:18px;
+}
+.xianming{
+	width: 290px;
+	height: 64px;
+	font-size: 40px;
+	color: #f9f9f7;
+	font-family: 华文琥珀;
+	line-height: 75px;
+	position: absolute;
+	margin-left: 250px;
+}
+.san{
+		width: 110px;
+  	height: 66px;
+		float: right;
+}
+.san img{
+	width: 66px;
+	height: 66px;
+	float: right;
+}
+.yinshen{
+  z-index: 3;
+	position: absolute;
+	margin-top: 85px;
+/* 	border:solid 1px beige; */
+	box-shadow:1px 3px 10px 2px black;
+	display: none;
+	border-radius: 5px;
+	float: right;
+}
+.yinshen li{
+	list-style: none;
+	width: 96px;
+	margin-left:10px;
+}
+.yinshen a{
+	text-decoration: none;
+	font-family: 隶书;
+	font-size: 22px;
+	color:  #490713;
+}
+.yinshen a:hover{
+	border-bottom: solid 1px #490713;
+	color: white;
+}
+.xian1 img{
+	width: 749px;
+	height: 17px;
+	margin: 0 auto;
+}
+.lunbotu{
+	width: 747px;
+	height: 333px;
+	margin: 0 auto;
+	margin: 0px;
+	padding: 0px;
+}
+.xian2 img{
+	width: 746px;
+	height: 11px;
+	margin-left: 2px;
+	margin-bottom:0px;
+}
+#second{
+	width: 746px;
+	height: 377px;
+ background: #ffebcd;
+}
+.biaoti1{
+	width:746px;
+	height: 52px;
+	float: left;
+	position: relative;
+}
+.chanpin{ 
+	margin-top: 2px;
+	width: 608px;
+	height: 52px;
+	float: left;
+	color: #f9f9f7;
+	font-family: 隶书;
+	line-height: 52px;
+	font-size: 45px;
+	background:  #490713;
+	text-align: center;
+	margin-left: 10px;
+	clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%,0 100%,10% 50%);
+}
+.biaoti1 .gengduo{
+	width: 94px;
+	height: 32px;
+	float: right;
+	margin-top: 20px;
+	color: black;
+	font-family: 幼圆;
+	font-size: 25px;
+}
+.tu p img{
+	width: 220px;
+	height: 136px;
+	float: left;
+	margin-left: 6px;
+	margin-top:8.5px;
+}
+.tu p{
+	float: left;
+	width: 232px;
+	height: 153px;	
+	margin-left: 10px;
+	margin-top: 5px;
+	background: #c69c79;
+}
+.tu ul{
+  margin: 0 auto;
+}
+.xian3 img{
+	width: 746px;
+	height: 10px;
+}
+#third{
+	width: 746px;
+	height: 389px;
+	clear: both;
+	background: #490713;
+	padding-top: 35px;
+}
+.guanyu{
+	width: 389px;
+	height: 369px;
+	float: left;
+	color: #f9f9f7;
+	position: relative;
+}
+.guanyu img{
+	margin-bottom: 0px;
+}
+.guanyuwomen{
+	width: 35px;
+	height: 200px;
+	font-size: 40px;
+	font-family: 隶书;
+	color: #fe352c;
+	margin: 20px;
+	float: left;
+}
+.neirong1{
+/* 	background: wheat; */
+	width:300px;
+	margin-right: 0px;
+	margin-top: 20px;
+	float: right;
+	font-size: 24px;
+	padding: 6px;
+	font-family: 隶书;
+	color: #8d4249;
+}
+.neirong11{
+	width: 200px;
+	font-family: 隶书;
+	font-size: 24px;
+	color: #8d4249;
+	float: right;
+	margin-top: -5px;
+}
+.neirong12{
+	width: 300px;
+	font-family: 隶书;
+	font-size: 24px;
+	color: #8d4249;
+	float: right;
+}
+.yun1 img{
+	background: wheat;
+	margin-top:-30px;
+	width: 130px;
+	margin-left: 20px
+}
+.chadao{
+	width: 332px;
+	height: 369px;
+	float: right;
+	color: #f9f9f7;
+	font-family: 隶书;
+	position: relative;
+}
+.chadaozhishi{
+	width: 35px;
+	height: 200px;
+	float: left;
+	font-size: 40px;
+	margin: 20px;
+  color: #fe352c;
+}
+.neirong2 ul{
+	list-style: none;
+	font-size: 24px;
+	color: #8d4249;
+	margin-top: 20px;
+	line-height: 40px;
+}
+.yun2 img{
+  float: left;
+	width: 200px;
+	height: 100px;
+}
+.xian4 img{
+	margin-top: 20px;
+	width: 746px;
+	height: 26px;
+}
+#fourth{
+	width: 746px;
+	height: 96px;
+	clear: both;
+	background: black;
+}
+.one{
+	width: 746px;
+	height:23px;
+	margin-top:25px;
+	color: #f9f9f7;
+	margin-left: 10px;
+}
+.one li{
+  list-style: none;
+	float: left;
+	margin-left: 65px;
+	font-weight: bold;
+	font-size: 18px;
+}
+.two{
+	width: 746px;
+	height: 23px;
+	margin-top: 0px;
+	color: #f9f9f7;
+	margin-left: 25px;
+}
+.two p{
+	float: left;
+	margin-left: 63px;
+	font-weight: bold;
+	font-size: 15px;
+}
+.three{
+	width: 746px;
+	height: 26px;
+	float: right;
+	color: #f9f9f7;
+}
+.three p{
+	margin-left: 130px;
+	float: left;
+	font-weight: bold;
+	font-size: 15px;
+}
